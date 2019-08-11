@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript">
+function calcnum(n){
+calcform.txt1.value=calcform.txt1.value+n;
+}
+</script>
+</head>
+<body style="background-color:green; text-align:center; margin-top:200px">
+<form name=calcform>
+<h2 style="color:white; font-family:cursive; font-size:30px">Calculator</h2>
+<input type=text name=txt1 style="text-align:right; width:150px; height:50px; border-radius:10px"></br>
+<input type=button name=delbtn value=C onclick="btnclear()" style="margin:2px; background-color:red; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=opbrktbtn value=( onclick="calcnum(opbrktbtn.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=clbrktbtn value=) onclick="calcnum(clbrktbtn.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=modbtn value=% onclick="calcnum(modbtn.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/></br>
+<input type=button name=btn9 value=9 onclick="calcnum(btn9.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=btn8 value=8 onclick="calcnum(btn8.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=btn7 value=7 onclick="calcnum(btn7.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=addbtn value=+ onclick="calcnum(addbtn.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/></br>
+<input type=button name=btn6 value=6 onclick="calcnum(btn6.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=btn5 value=5 onclick="calcnum(btn5.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=btn4 value=4 onclick="calcnum(btn4.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=subbtn value=- onclick="calcnum(subbtn.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/></br>
+<input type=button name=btn3 value=3 onclick="calcnum(btn3.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=btn2 value=2 onclick="calcnum(btn2.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=btn1 value=1 onclick="calcnum(btn1.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=mulbtn value=* onclick="calcnum(mulbtn.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/></br>
+<input type=button name=btn0 value=0 onclick="calcnum(btn0.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=decbtn value=. onclick="calcnum(decbtn.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=eqbtn value== onclick="txt1.value=eval(txt1.value)" style="margin:2px; margin-left:5px; height:30px; width:30px; border-radius:5px"/>
+<input type=button name=divbtn value="/" onclick="calcnum(divbtn.value)" style="margin:2px; height:30px; width:30px; border-radius:5px"/></br>
+</form>
+</body>
+</html>
